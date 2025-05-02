@@ -1,7 +1,7 @@
 -- Create database
-DROP TABLE IF EXISTS leaderboard;
-CREATE DATABASE IF NOT EXISTS leaderboard_db;
-USE leaderboard_db;
+DROP DATABASE IF EXISTS leaderboard;
+CREATE DATABASE IF NOT EXISTS leaderboard;
+USE leaderboard;
 
 -- Create table
 CREATE TABLE leaderboard (

@@ -16,7 +16,7 @@ $sql = "
     CASE 
       WHEN losses = 0 AND wins > 0 THEN wins
       WHEN losses = 0 AND wins = 0 THEN 0
-      ELSE ROUND(wins / losses, 2)
+      ELSE ROUND(wins / matches, 2)
     END AS ratio
   FROM leaderboard
   ORDER BY matches DESC, wins DESC

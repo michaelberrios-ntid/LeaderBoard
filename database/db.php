@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'leaderboard_db';
+$db   = 'leaderboard';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';

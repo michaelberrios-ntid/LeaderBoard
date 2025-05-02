@@ -4,10 +4,13 @@ let lastLimit = leaderboardLimit;
 
 async function fetchLeaderboardData() {
   try {
+    //  TODO: Fetch the leaderboard data from API and parse as JSON
     const response = await fetch(
-      `http://localhost/leaderboard/api/get_leaderboard.php?limit=${leaderboardLimit}`
+      '___FILL_API_URL_HERE___'
     );
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+    if (!response.ok)
+      throw new Error(`HTTP error! status: ${response.status}`);
 
     const data = await response.json();
 

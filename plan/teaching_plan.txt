@@ -1,0 +1,12 @@
+index.html
+missing bootstrap link
+missing styles.css
+
+update_stat.js:5
+fetch_leaderboards.js:9
+update_leaderboard_limit:9
+
+update_stat.php:21
+get_leaderboard.php:10
+add_player.php:21
+

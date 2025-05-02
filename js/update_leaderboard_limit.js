@@ -5,6 +5,7 @@ document.querySelectorAll(".dropdown-item").forEach((item) => {
     e.preventDefault();
     leaderboardLimit = parseInt(item.dataset.limit);
     document.getElementById("limitDisplay").textContent = leaderboardLimit;
-    fetchLeaderboardData(); // immediate fetch
+    
+    // TODO: Invoke the fetchLeaderboardData function to update the show tops #
   });
 });

@@ -1,1 +1,18 @@
-/.idea
+# PhpStorm project files
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Composer dependencies
+/vendor/
+
+# Node dependencies (if any)
+/node_modules/
+
+# Log files
+*.log
+
+# Environment files
+.env

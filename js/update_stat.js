@@ -4,7 +4,7 @@ async function updateStat(playerId, stat) {
   try {
     const response = await fetch(
       // FILL_API_URL_HERE
-      apiUrlLeaderboard + "update_stat.php",
+      
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

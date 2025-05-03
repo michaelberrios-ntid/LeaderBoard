@@ -18,7 +18,7 @@ if ($name === '') {
 
 try {
     // Complete the SQL Statement to Insert a New Player into the Database
-    $stmt = $pdo->prepare("INSERT INTO leaderboard (name) VALUES (:name)");
+    $stmt = $pdo->prepare("FILL_API_HERE");
     $stmt->execute([':name' => $name]);
 
     echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);

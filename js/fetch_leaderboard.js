@@ -7,7 +7,7 @@ async function fetchLeaderboardData() {
   try {
     const response = await fetch(
       // FILL_API_URL_HERE
-      apiUrl + leaderboardLimit
+      
     );
 
     if (!response.ok)

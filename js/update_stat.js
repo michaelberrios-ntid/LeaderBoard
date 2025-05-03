@@ -1,8 +1,10 @@
+let apiUrlLeaderboard = "http://localhost/leaderboard/api/";
+
 async function updateStat(playerId, stat) {
   try {
-    //  TODO: Complete the API call to update the states
     const response = await fetch(
-      "___FILL_API_URL_HERE___",
+      // FILL_API_URL_HERE
+      apiUrlLeaderboard + "update_stat.php",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

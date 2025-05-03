@@ -17,9 +17,10 @@ if (!$id || !in_array($field, ['wins', 'losses'])) {
     exit;
 }
 
-//  TODO: Write the query to update the leaderboard stats
-$sql = "___FILL_FIELD_UPDATE_HERE___";
+$sql = "UPDATE leaderboard SET $field = $field + 1, matches = matches + 1 WHERE id = :id";
+// Prepare the Database SQL Statement
 $stmt = $pdo->prepare($sql);
+// Run the SQL Statement
 $stmt->execute([':id' => $id]);
-
+// Respond to the Client with Success
 echo json_encode(['success' => true]);

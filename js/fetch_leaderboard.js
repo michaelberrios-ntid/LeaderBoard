@@ -1,12 +1,13 @@
 leaderboardLimit = 5; // default
 let lastData = [];
 let lastLimit = leaderboardLimit;
+let apiUrl = 'http://localhost/leaderboard/api/get_leaderboard.php?limit=';
 
 async function fetchLeaderboardData() {
   try {
-    //  TODO: Fetch the leaderboard data from API and parse as JSON
     const response = await fetch(
-      '___FILL_API_URL_HERE___'
+      // FILL_API_URL_HERE
+      apiUrl + leaderboardLimit
     );
 
     if (!response.ok)

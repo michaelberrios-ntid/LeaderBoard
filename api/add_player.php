@@ -17,8 +17,8 @@ if ($name === '') {
 }
 
 try {
-    //  TODO: Write query to insert new player into leaderboard
-    $stmt = $pdo->prepare("___FILL_INSERT_SQL_HERE___");
+    // Complete the SQL Statement to Insert a New Player into the Database
+    $stmt = $pdo->prepare("INSERT INTO leaderboard (name) VALUES (:name)");
     $stmt->execute([':name' => $name]);
 
     echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);

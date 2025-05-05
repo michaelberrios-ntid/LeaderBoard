@@ -1,5 +1,6 @@
 <?php
 require '../database/db.php';
+$jsonHeader = 'Content-Type: application/json';
 
 $limit = isset($_GET['limit']) ? (int) $_GET['limit'] : 10; // default to 10 if not given
 
@@ -30,6 +31,6 @@ $stmt->execute();
 // Fetch all results
 $results = $stmt->fetchAll();
 // Tell the Client that the response is JSON
-header('Content-Type: application/json');
+header($jsonHeader);
 // Send the response to the Client
 echo json_encode($results);

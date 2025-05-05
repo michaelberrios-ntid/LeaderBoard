@@ -1,12 +1,17 @@
+<?php
+    $bootstrap = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />';
+    $styles = '<link rel="stylesheet" href="styles/styles.css" />';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Leaderboard</title>
     <!-- TODO: Uh oh, it's not as beautiful as it was before... Add the boostrap css  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <?php echo $bootstrap; ?>
     <!-- TODO: How can we make it beautiful? Add the styles.css -->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <?php echo $styles; ?>
     <link rel="stylesheet" href="styles/add_player.css" />
   </head>
   

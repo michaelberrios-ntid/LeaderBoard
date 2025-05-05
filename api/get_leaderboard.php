@@ -29,8 +29,7 @@ $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
 $stmt->execute();
 
 // Fetch all results
-$results = $stmt->fetchAll();
+
 // Tell the Client that the response is JSON
-header($jsonHeader);
+
 // Send the response to the Client
-echo json_encode($results);

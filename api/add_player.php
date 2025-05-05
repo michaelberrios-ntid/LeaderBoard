@@ -19,7 +19,7 @@ if ($name === '') {
 
 try {
     // Complete the SQL Statement to Insert a New Player into the Database
-    $stmt = $pdo->prepare($insertIntoLeaderboardValues);
+    $stmt = $pdo->prepare("");
     $stmt->execute([':name' => $name]);
 
     echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);

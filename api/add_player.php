@@ -1,5 +1,6 @@
 <?php
 require '../database/db.php';
+$insertIntoLeaderboardValues = "INSERT INTO leaderboard (name) VALUES (:name)";
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -18,7 +19,7 @@ if ($name === '') {
 
 try {
     // Complete the SQL Statement to Insert a New Player into the Database
-    $stmt = $pdo->prepare("FILL_API_HERE");
+    $stmt = $pdo->prepare($insertIntoLeaderboardValues);
     $stmt->execute([':name' => $name]);
 
     echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);
